@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b1723335-a368-4eb0-8f1d-f2286545a7b2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{123d4f97-1f40-4b37-8c21-34866798fd64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GalaxyInterface">
+      <UniqueIdentifier>{8b9f5f29-1b0b-4146-b54c-3c9e882e303e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DMCore">
+      <UniqueIdentifier>{b7423135-d2a7-4e16-8bc2-34e1b8fd53e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DMCore\Agents">
+      <UniqueIdentifier>{bd24fed0-81dc-4e60-a502-e3da2abea8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DMCore\Agents\CoreAgents">
+      <UniqueIdentifier>{553c3dd3-2779-4f45-b5e0-e6f45aeaf2f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DMCore\Agents\DialogAgents">
+      <UniqueIdentifier>{f7793cf9-7b72-4f88-8f44-c31c06e36cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DMCore\Agents\DialogAgents\BasicAgents">
+      <UniqueIdentifier>{9db55f52-008e-41d3-8c9f-326ca83ce14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DMCore\Agents\DialogAgents\DiscourseAgents">
+      <UniqueIdentifier>{d11972cc-2aff-4810-8f88-205767a344fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DMCore\Concepts">
+      <UniqueIdentifier>{79fb4596-1b5a-4dce-84f1-0a8daf95852c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DialogTask">
+      <UniqueIdentifier>{b4b9d236-edbe-4f21-b247-fbe0e4a953ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Documentation">
+      <UniqueIdentifier>{d05445fd-5003-4924-8170-43f801c694f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utils\DebugUtils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Utils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GalaxyInterface\GalaxyInterface.cpp">
+      <Filter>Source Files\GalaxyInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\DMBridge.cpp">
+      <Filter>Source Files\DMCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\DMCore.cpp">
+      <Filter>Source Files\DMCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Log.cpp">
+      <Filter>Source Files\DMCore</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\Agent.cpp">
+      <Filter>Source Files\DMCore\Agents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\Registry.cpp">
+      <Filter>Source Files\DMCore\Agents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\CoreAgents\DMCoreAgent.cpp">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\CoreAgents\DTTManagerAgent.cpp">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\CoreAgents\GalaxyStubAgent.cpp">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\CoreAgents\InputManagerAgent.cpp">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\CoreAgents\OutputManagerAgent.cpp">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\CoreAgents\StateManagerAgent.cpp">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\DialogAgents\DialogAgent.cpp">
+      <Filter>Source Files\DMCore\Agents\DialogAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\DialogAgents\BasicAgents\DialogAgency.cpp">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\BasicAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\DialogAgents\BasicAgents\MAExecute.cpp">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\BasicAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\DialogAgents\BasicAgents\MAExpect.cpp">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\BasicAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\DialogAgents\BasicAgents\MAInform.cpp">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\BasicAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\DialogAgents\BasicAgents\MARequest.cpp">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\BasicAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\DialogAgents\DiscourseAgents\AllDiscourseAgents.cpp">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\DiscourseAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\DialogAgents\DiscourseAgents\DAHelp.cpp">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\DiscourseAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\DialogAgents\DiscourseAgents\DARepeat.cpp">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\DiscourseAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Agents\DialogAgents\DiscourseAgents\DASuspend.cpp">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\DiscourseAgents</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Concepts\ArrayConcept.cpp">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Concepts\BoolConcept.cpp">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Concepts\Concept.cpp">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Concepts\FloatConcept.cpp">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Concepts\IntConcept.cpp">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Concepts\StringConcept.cpp">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClCompile>
+    <ClCompile Include="DMCore\Concepts\StructConcept.cpp">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogTask\DialogTask.cpp">
+      <Filter>Source Files\DialogTask</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils\DebugUtils.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GalaxyInterface\GalaxyInterface.h">
+      <Filter>Source Files\GalaxyInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="GalaxyInterface\GalaxyInterfaceFunctions.h">
+      <Filter>Source Files\GalaxyInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Core.h">
+      <Filter>Source Files\DMCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\DMBridge.h">
+      <Filter>Source Files\DMCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\DMCore.h">
+      <Filter>Source Files\DMCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Log.h">
+      <Filter>Source Files\DMCore</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\Agent.h">
+      <Filter>Source Files\DMCore\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\AllAgents.h">
+      <Filter>Source Files\DMCore\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\Registry.h">
+      <Filter>Source Files\DMCore\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\CoreAgents\AllCoreAgents.h">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\CoreAgents\DMCoreAgent.h">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\CoreAgents\DTTManagerAgent.h">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\CoreAgents\GalaxyStubAgent.h">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\CoreAgents\InputManagerAgent.h">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\CoreAgents\OutputManagerAgent.h">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\CoreAgents\StateManagerAgent.h">
+      <Filter>Source Files\DMCore\Agents\CoreAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\AllDialogAgents.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\DialogAgent.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\AllBasicAgents.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\BasicAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\DialogAgency.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\BasicAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\MAExecute.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\BasicAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\MAExpect.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\BasicAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\MAInform.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\BasicAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\MARequest.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\BasicAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\DiscourseAgents\AllDiscourseAgents.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\DiscourseAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\DiscourseAgents\DAHelp.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\DiscourseAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\DiscourseAgents\DARepeat.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\DiscourseAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Agents\DialogAgents\DiscourseAgents\DASuspend.h">
+      <Filter>Source Files\DMCore\Agents\DialogAgents\DiscourseAgents</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Concepts\AllConcepts.h">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Concepts\ArrayConcept.h">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Concepts\BoolConcept.h">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Concepts\Concept.h">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Concepts\FloatConcept.h">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Concepts\IntConcept.h">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Concepts\StringConcept.h">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClInclude>
+    <ClInclude Include="DMCore\Concepts\StructConcept.h">
+      <Filter>Source Files\DMCore\Concepts</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogTask\DialogTask.h">
+      <Filter>Source Files\DialogTask</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Documentation\Brainstorming.txt">
+      <Filter>Documentation</Filter>
+    </None>
+    <None Include="Documentation\CodingStyle.txt">
+      <Filter>Documentation</Filter>
+    </None>
+    <None Include="Documentation\README.txt">
+      <Filter>Documentation</Filter>
+    </None>
+    <None Include="Documentation\TODO.txt">
+      <Filter>Documentation</Filter>
+    </None>
+  </ItemGroup>
+</Project>

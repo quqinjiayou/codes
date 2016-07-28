@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/RavenClaw", CJJAAAAA</SccProjectName>
+    <SccAuxPath />
+    <SccLocalPath>.</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Bin\Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Bin\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>Galaxy\include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Bin\Release/RavenClaw.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Bin\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Bin\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Bin\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>user32.lib;ws2_32.lib;Galaxy\lib\x86-nt\libGalaxy.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Bin\Release/RavenClaw.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Bin\Release/RavenClaw.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\Bin\Release/RavenClaw.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>Galaxy\include;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Bin\Debug/RavenClaw.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Bin\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Bin\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Bin\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>user32.lib;ws2_32.lib;Galaxy\lib\x86-nt\libGalaxy_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Bin\Debug/RavenClaw.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Bin\Debug/RavenClaw.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\Bin\Debug/RavenClaw.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Utils\DebugUtils.cpp" />
+    <ClCompile Include="Utils\Utils.cpp" />
+    <ClCompile Include="GalaxyInterface\GalaxyInterface.cpp" />
+    <ClCompile Include="DMCore\DMBridge.cpp" />
+    <ClCompile Include="DMCore\DMCore.cpp" />
+    <ClCompile Include="DMCore\Log.cpp" />
+    <ClCompile Include="DMCore\Agents\Agent.cpp" />
+    <ClCompile Include="DMCore\Agents\Registry.cpp" />
+    <ClCompile Include="DMCore\Agents\CoreAgents\DMCoreAgent.cpp" />
+    <ClCompile Include="DMCore\Agents\CoreAgents\DTTManagerAgent.cpp" />
+    <ClCompile Include="DMCore\Agents\CoreAgents\GalaxyStubAgent.cpp" />
+    <ClCompile Include="DMCore\Agents\CoreAgents\InputManagerAgent.cpp" />
+    <ClCompile Include="DMCore\Agents\CoreAgents\OutputManagerAgent.cpp" />
+    <ClCompile Include="DMCore\Agents\CoreAgents\StateManagerAgent.cpp" />
+    <ClCompile Include="DMCore\Agents\DialogAgents\DialogAgent.cpp" />
+    <ClCompile Include="DMCore\Agents\DialogAgents\BasicAgents\DialogAgency.cpp" />
+    <ClCompile Include="DMCore\Agents\DialogAgents\BasicAgents\MAExecute.cpp" />
+    <ClCompile Include="DMCore\Agents\DialogAgents\BasicAgents\MAExpect.cpp" />
+    <ClCompile Include="DMCore\Agents\DialogAgents\BasicAgents\MAInform.cpp" />
+    <ClCompile Include="DMCore\Agents\DialogAgents\BasicAgents\MARequest.cpp" />
+    <ClCompile Include="DMCore\Agents\DialogAgents\DiscourseAgents\AllDiscourseAgents.cpp" />
+    <ClCompile Include="DMCore\Agents\DialogAgents\DiscourseAgents\DAHelp.cpp" />
+    <ClCompile Include="DMCore\Agents\DialogAgents\DiscourseAgents\DARepeat.cpp" />
+    <ClCompile Include="DMCore\Agents\DialogAgents\DiscourseAgents\DASuspend.cpp" />
+    <ClCompile Include="DMCore\Concepts\ArrayConcept.cpp" />
+    <ClCompile Include="DMCore\Concepts\BoolConcept.cpp" />
+    <ClCompile Include="DMCore\Concepts\Concept.cpp" />
+    <ClCompile Include="DMCore\Concepts\FloatConcept.cpp" />
+    <ClCompile Include="DMCore\Concepts\IntConcept.cpp" />
+    <ClCompile Include="DMCore\Concepts\StringConcept.cpp" />
+    <ClCompile Include="DMCore\Concepts\StructConcept.cpp" />
+    <ClCompile Include="DialogTask\DialogTask.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils\DebugUtils.h" />
+    <ClInclude Include="Utils\Utils.h" />
+    <ClInclude Include="GalaxyInterface\GalaxyInterface.h" />
+    <ClInclude Include="GalaxyInterface\GalaxyInterfaceFunctions.h" />
+    <ClInclude Include="DMCore\Core.h" />
+    <ClInclude Include="DMCore\DMBridge.h" />
+    <ClInclude Include="DMCore\DMCore.h" />
+    <ClInclude Include="DMCore\Log.h" />
+    <ClInclude Include="DMCore\Agents\Agent.h" />
+    <ClInclude Include="DMCore\Agents\AllAgents.h" />
+    <ClInclude Include="DMCore\Agents\Registry.h" />
+    <ClInclude Include="DMCore\Agents\CoreAgents\AllCoreAgents.h" />
+    <ClInclude Include="DMCore\Agents\CoreAgents\DMCoreAgent.h" />
+    <ClInclude Include="DMCore\Agents\CoreAgents\DTTManagerAgent.h" />
+    <ClInclude Include="DMCore\Agents\CoreAgents\GalaxyStubAgent.h" />
+    <ClInclude Include="DMCore\Agents\CoreAgents\InputManagerAgent.h" />
+    <ClInclude Include="DMCore\Agents\CoreAgents\OutputManagerAgent.h" />
+    <ClInclude Include="DMCore\Agents\CoreAgents\StateManagerAgent.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\AllDialogAgents.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\DialogAgent.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\AllBasicAgents.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\DialogAgency.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\MAExecute.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\MAExpect.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\MAInform.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\BasicAgents\MARequest.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\DiscourseAgents\AllDiscourseAgents.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\DiscourseAgents\DAHelp.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\DiscourseAgents\DARepeat.h" />
+    <ClInclude Include="DMCore\Agents\DialogAgents\DiscourseAgents\DASuspend.h" />
+    <ClInclude Include="DMCore\Concepts\AllConcepts.h" />
+    <ClInclude Include="DMCore\Concepts\ArrayConcept.h" />
+    <ClInclude Include="DMCore\Concepts\BoolConcept.h" />
+    <ClInclude Include="DMCore\Concepts\Concept.h" />
+    <ClInclude Include="DMCore\Concepts\FloatConcept.h" />
+    <ClInclude Include="DMCore\Concepts\IntConcept.h" />
+    <ClInclude Include="DMCore\Concepts\StringConcept.h" />
+    <ClInclude Include="DMCore\Concepts\StructConcept.h" />
+    <ClInclude Include="DialogTask\DialogTask.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Documentation\Brainstorming.txt" />
+    <None Include="Documentation\CodingStyle.txt" />
+    <None Include="Documentation\README.txt" />
+    <None Include="Documentation\TODO.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
