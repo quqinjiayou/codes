@@ -56,9 +56,6 @@
                         <p class="p1">
                             - 截止至今，我们已协助30余家创业企业完成融资，融资金额超过8亿美金，行业涵盖电商、供应链、物流、医疗、企业服务等多个细分领域。
                         </p><br/>
-                        <p class="p1">
-                            - 作为市场领先的早期投资机构，冲盈资本已投资了美丽说、聚美优品、小麦公社、每日优鲜等过百家创业企业。
-                        </p><br/>
 						<p class="p1">
                             <img src="./images/cases.jpg" />
                         </p>
@@ -82,7 +79,7 @@
 						<div class="box fl">
 							<div class="cnt fl">
                                 <h4 class="name">祁 萌</h4>
-                                <p class="info">&diams;&nbsp;华兴资本创始人与CEO，带领华兴资本完成了超过190亿美元的交易<br/>&nbsp;&nbsp;	额。曾任亚信集团首席战略官，曾在长达七年的投资银行家生涯里先<br/>&nbsp;&nbsp;&nbsp;后服务于摩根士丹利和瑞士信贷</p>
+                                <p class="info">&diams;&nbsp;冲盈资本联合创始人，专注于医疗、企业服务等早期互联网创业领域，<br/>&nbsp;&nbsp;&nbsp;服务客户包括医加壹、杭州康晟(掌上糖医)、茶帮通、如涵、1箱子、法<br/>&nbsp;&nbsp;&nbsp;大大、云巴等
 								<p class="info">&diams;&nbsp;曾供职于以太资本、小饭桌创业课堂等早期融资顾问机构；曾任虎嗅<br/>&nbsp;&nbsp;&nbsp;网高级编辑，有深厚媒体经验和业内资源</p>
 								<p class="info">&diams;&nbsp;北京大学德语文学学士，德国不来梅大学文学硕士</p>
                             </div>
@@ -112,22 +109,115 @@
         <div class="section join">
             <div class="">
                 <div class="w1024">
-                    <div class="container">
-                        <h5>加入我们</h5>
-                        <div class="cont"><br/><br/><br/><br/>
-                            <div class="adr">
-                                <p>北京市朝阳区建国路93号院万达广场3号楼</p>
-                                <p>BP@everingcap.com</p>
-                            </div><br/><br/><br/>
-                            <!--div class="about prz" style="height:120px;">
-                                商业计划书投递：<a href="mailto:hi@k2vc.com">hi@k2vc.com</a><br />
-                                加入K2VC或被投资公司：<a href="mailto:people@k2vc.com">people@k2vc.com<br />
-                                </a>媒体及投后服务合作：<a href="mailto:k2vcsev@k2vc.com">k2vcsev@k2vc.com</a><br />
-                                欢迎关注险峰长青微信服务号：险峰长青
-                            </div-->
+                   <h5>加入我们</h5>
+                   <div class="cont"><br/><br/>
+                        <div class="adr">
+                            <p>公司地址：北京市朝阳区建国路93号院万达广场3号楼</p><br/>
+							<style type="text/css">
+								.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+								.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+							</style>
+							<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+							<!--百度地图容器-->
+							<div style="width:697px;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+							<script type="text/javascript">
+								//创建和初始化地图函数：
+								function initMap(){
+									createMap();//创建地图
+									setMapEvent();//设置地图事件
+									addMapControl();//向地图添加控件
+									addMarker();//向地图中添加marker
+								}
+									
+								//创建地图函数：
+								function createMap(){
+									var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+									var point = new BMap.Point(116.480171,39.916402);//定义一个中心点坐标
+									map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+									window.map = map;//将map变量存储在全局
+								}
+									
+								//地图事件设置函数：
+								function setMapEvent(){
+									map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+									map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+									map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+									map.enableKeyboard();//启用键盘上下左右键移动地图
+								}
+									
+								//地图控件添加函数：
+								function addMapControl(){
+									//向地图中添加缩放控件
+									var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_SMALL});
+									map.addControl(ctrl_nav);
+									//向地图中添加比例尺控件
+									var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+									map.addControl(ctrl_sca);
+								}
+									
+								//标注点数组
+								var markerArr = [{title:"公司地址",content:"北京市朝阳区建国路93号院万达广场3号楼",point:"116.479151|39.916789",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+									 ];
+								//创建marker
+								function addMarker(){
+									for(var i=0;i<markerArr.length;i++){
+										var json = markerArr[i];
+										var p0 = json.point.split("|")[0];
+										var p1 = json.point.split("|")[1];
+										var point = new BMap.Point(p0,p1);
+										var iconImg = createIcon(json.icon);
+										var marker = new BMap.Marker(point,{icon:iconImg});
+										var iw = createInfoWindow(i);
+										var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+										marker.setLabel(label);
+										map.addOverlay(marker);
+										label.setStyle({
+													borderColor:"#808080",
+													color:"#333",
+													cursor:"pointer"
+										});
+											
+										(function(){
+											var index = i;
+											var _iw = createInfoWindow(i);
+											var _marker = marker;
+											_marker.addEventListener("click",function(){
+												this.openInfoWindow(_iw);
+											});
+											_iw.addEventListener("open",function(){
+												_marker.getLabel().hide();
+											})
+											_iw.addEventListener("close",function(){
+												_marker.getLabel().show();
+											})
+											label.addEventListener("click",function(){
+												_marker.openInfoWindow(_iw);
+											})
+											if(!!json.isOpen){
+												label.hide();
+												_marker.openInfoWindow(_iw);
+											}
+										})()
+									}
+								}
+								//创建InfoWindow
+								function createInfoWindow(i){
+									var json = markerArr[i];
+									var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+									return iw;
+								}
+								//创建一个Icon
+								function createIcon(json){
+									var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+									return icon;
+								}									
+								initMap();//创建和初始化地图
+							</script>
+							<br/><br/>
+                            <p>联系我们：BP@everingcap.com</p>
                         </div>
-                    </div>
-                        
+                    </div>                       
                 </div>
             </div>
         </div>
@@ -191,12 +281,8 @@
             服务提供
         </div>
     </div>
-    <div style="display: block; position: fixed; left: 0; top: 0; z-index: -1; visibility: hidden">
-        <div id="mapContainer"></div>
-    </div>
 </body>
 </html>
-<script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <script src="js/slimscroll.min.js"></script>
 <script src="js/seajs/sea-debug.js" id="seajsnode"></script>
 <script src="js/seajs/config.js"></script>

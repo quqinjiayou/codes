@@ -108,22 +108,8 @@ html,body{height:100%;width:100%;overflow:hidden;}
 .team .leader .box .job{font-size:12px;padding-bottom:10px;line-height:18px;}
 .team .leader .box .info{line-height:22px;font-size:14px}
 
-
-
-/*.service {
-	width:100%;min-height:100%;-o-background-size:cover;-ms-background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;background-size:cover;
-}
-.service h5{width:283px;margin:0 auto;text-align:center;font-size:24px;color:#295585;background:url(../images/th.png) no-repeat 0 53%;padding:20px 0 50px 0;filter:alpha(opacity = 0);opacity:0;}
-.join h5{width:283px;margin:0 auto;text-align:center;font-size:24px;color:#295585;background:url(../images/th.png) no-repeat 0 53%;padding:20px 0 50px 0;filter:alpha(opacity = 0);opacity:1;}
-.service .leader{width:1024px;height:217px;opacity=0);opacity:0;}
-.service .leader .box{width:512px;height:217px;}
-.service .leader .box .cnt{width:450px;overflow:hidden;height:189px;background-color: rgba(41, 85, 133, 0.6);padding:28px 12px 0 12px;color:#FFF;}
-.service .leader .box .name{font-size:18px;padding-bottom:13px;}
-.service .leader .box .job{font-size:12px;padding-bottom:10px;line-height:18px;}
-.service .leader .box .info{line-height:22px;font-size:14px}*/
-/* join */
 .join{width:100%;min-height:100%;background:url() no-repeat center top;-o-background-size:cover;-ms-background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;background-size:cover;}
-.join .cont{width:654px;opacity:0;filter:alpha(opacity=0);margin-left: 350px;}
+.join .cont{width:654px;opacity:0;filter:alpha(opacity=0);margin-left: 250px;}
 .join .cont .adr{height:24px;line-height:24px;font-size:20px;color:#000;margin-bottom:10px;}
 .join .cont .about{width:444px;height:64px;font-size:18px;color:#e9ebef;line-height:30px;margin-top:26px;}
 .join .cont .about a{color:#e9ebef;}
@@ -172,6 +158,3 @@ html,body{height:100%;width:100%;overflow:hidden;}
 .fixed .ws.z-hov{text-indent:0;}
 
 *+html .mCSB_scrollTools{width:auto;}
-.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
-    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
-#mapContainer{width:697px!important;height:550px!important;}
